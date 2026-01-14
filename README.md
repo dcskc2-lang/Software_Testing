@@ -13,7 +13,7 @@ Chương 2: Quy trình kiểm thử
 
 1. Giới thiệu
 
-Dự án này bao gồm class `StudentAnalyzer` để xử lý danh sách điểm số học sinh và các unit test tương ứng sử dụng JUnit 5.
+- Dự án này bao gồm class `StudentAnalyzer` để xử lý danh sách điểm số học sinh và các unit test tương ứng sử dụng JUnit 5.
 
 2. Chức năng chính
 
