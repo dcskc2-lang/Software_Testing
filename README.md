@@ -30,4 +30,4 @@ Chương 2: Quy trình kiểm thử
 5. Cách chạy kiểm thử
 Yêu cầu: JDK 8+ và thư viện JUnit 5.
 
-Thực hiện: Chạy trực tiếp trên `VS Code` (IntelliJ/Eclipse) bằng cách click chuột phải vào file StudentAnalyzerTest.java và chọn Run.
+-Thực hiện: Chạy trực tiếp trên `VS Code` (IntelliJ/Eclipse) bằng cách click chuột phải vào file StudentAnalyzerTest.java và chọn Run.
