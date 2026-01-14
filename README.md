@@ -21,13 +21,13 @@ Chương 2: Quy trình kiểm thử
 
  -`calculateValidAverage`: Tính điểm trung bình của các điểm hợp lệ.
 
-3. Cấu trúc thư mục
+4. Cấu trúc thư mục
 
  -`unit-test/src/`: Chứa mã nguồn Java.
 
  -`unit-test/test/`: Chứa mã nguồn kiểm thử.
 
-4. Cách chạy kiểm thử
+5. Cách chạy kiểm thử
 Yêu cầu: JDK 8+ và thư viện JUnit 5.
 
 Thực hiện: Chạy trực tiếp trên `VS Code` (IntelliJ/Eclipse) bằng cách click chuột phải vào file StudentAnalyzerTest.java và chọn Run.
