@@ -1,7 +1,7 @@
 # Chương 1: Nguyên lý của kiểm thử
 Ngày: 05/01/2026 
 
-Nơi thực hiện bài kiểm thử: Cantunsee.space 
+Nơi thực hiện bài kiểm thử: [Can't Unsee](https://cantunsee.space)
 
 Mục tiêu: Kiểm tra khả năng nhận diện chi tiết trong thiết kế giao diện (padding, typography, contrast, v.v.). 
 
