@@ -13,21 +13,21 @@ Chương 2: Quy trình kiểm thử
 
 1. Giới thiệu
 
-2. Dự án này bao gồm class `StudentAnalyzer` để xử lý danh sách điểm số học sinh và các unit test tương ứng sử dụng JUnit 5.
+Dự án này bao gồm class `StudentAnalyzer` để xử lý danh sách điểm số học sinh và các unit test tương ứng sử dụng JUnit 5.
 
-3. Chức năng chính
+2. Chức năng chính
 
  - `countExcellentStudents`: Đếm số học sinh giỏi (>= 8.0), bỏ qua các điểm không hợp lệ (<0 hoặc >10).
 
  - `calculateValidAverage`: Tính điểm trung bình của các điểm hợp lệ.
 
-4. Cấu trúc thư mục
+3. Cấu trúc thư mục
 
  - `unit-test/src/`: Chứa mã nguồn Java.
 
  - `unit-test/test/`: Chứa mã nguồn kiểm thử.
 
-5. Cách chạy kiểm thử
+4. Cách chạy kiểm thử
 Yêu cầu: JDK 8+ và thư viện JUnit 5.
 
 - Thực hiện: Chạy trực tiếp trên `VS Code` (IntelliJ/Eclipse) bằng cách click chuột phải vào file StudentAnalyzerTest.java và chọn Run.
