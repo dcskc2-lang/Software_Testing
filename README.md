@@ -17,15 +17,15 @@ Chương 2: Quy trình kiểm thử
 
 3. Chức năng chính
 
--`countExcellentStudents`: Đếm số học sinh giỏi (>= 8.0), bỏ qua các điểm không hợp lệ (<0 hoặc >10).
+ -`countExcellentStudents`: Đếm số học sinh giỏi (>= 8.0), bỏ qua các điểm không hợp lệ (<0 hoặc >10).
 
--`calculateValidAverage`: Tính điểm trung bình của các điểm hợp lệ.
+ -`calculateValidAverage`: Tính điểm trung bình của các điểm hợp lệ.
 
 3. Cấu trúc thư mục
 
--`unit-test/src/`: Chứa mã nguồn Java.
+ -`unit-test/src/`: Chứa mã nguồn Java.
 
--`unit-test/test/`: Chứa mã nguồn kiểm thử.
+ -`unit-test/test/`: Chứa mã nguồn kiểm thử.
 
 4. Cách chạy kiểm thử
 Yêu cầu: JDK 8+ và thư viện JUnit 5.
