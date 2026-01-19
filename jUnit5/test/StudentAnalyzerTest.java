@@ -61,4 +61,11 @@ public class StudentAnalyzerTest {
                 analyzer.calculateValidAverage(Arrays.asList(-2.0, 11.5))
         );
     }
+
+    @Test
+    public void testCalculateValidAverage_NullList() {
+        StudentAnalyzer analyzer = new StudentAnalyzer();
+        assertEquals(0, analyzer.calculateValidAverage(null));
 }
+}
+
