@@ -31,3 +31,47 @@ Kết quả: 6280
 Yêu cầu: JDK 8+ và thư viện JUnit 5.
 
 - Thực hiện: Chạy trực tiếp trên `VS Code` (IntelliJ/Eclipse) bằng cách click chuột phải vào file StudentAnalyzerTest.java và chọn Run.
+
+# Chương 3: Kiểm thử tĩnh
+
+1. Giới thiệu
+   
+Sử dụng Cypress để thực hiện kiểm thử tự động End-to-End (E2E) cho trang web mẫu Swag Labs (SauceDemo). Bài tập tập trung vào việc mô phỏng hành vi người dùng thực tế từ đăng nhập đến thanh toán.
+
+3. Các kịch bản kiểm thử (Test Scenarios)
+   
+Dự án bao gồm 2 file kiểm thử chính nằm trong thư mục cypress/e2e/:
+
+`login_spec.cy.js` (Kiểm thử Đăng nhập):
+
+- Đăng nhập thành công với tài khoản hợp lệ (standard_user).
+  
+- Hiển thị thông báo lỗi chính xác khi nhập sai thông tin (invalid_user).
+  
+`cart_spec.cy.js` (Kiểm thử Giỏ hàng & Thanh toán):
+
+- Thêm sản phẩm vào giỏ hàng và kiểm tra số lượng (Badge count).
+  
+- Sắp xếp danh sách sản phẩm theo giá (Thấp đến Cao).
+  
+- Xóa sản phẩm khỏi giỏ hàng.
+  
+- Thực hiện quy trình thanh toán đầy đủ (Checkout Flow): Giỏ hàng -> Điền thông tin -> Xác nhận -> Hoàn tất.
+
+4. Kết quả kiểm thử (Evidence)
+
+- Kết quả kịch bản Đăng nhập:
+
+<img width="1919" height="1013" alt="image" src="https://github.com/user-attachments/assets/7d896a39-f9cf-4c7b-a441-c0f65f23cbd4" />
+
+<img width="1918" height="1021" alt="image" src="https://github.com/user-attachments/assets/da0c8c78-1146-4cd8-9457-e4492bd8cedd" />
+
+
+- Kết quả kịch bản Giỏ hàng & Thanh toán:
+- 
+<img width="1919" height="1024" alt="Screenshot 2026-01-21 163816" src="https://github.com/user-attachments/assets/c3d0ed51-85e6-41b0-99ec-0c91c799d821" />
+
+<img width="1919" height="1019" alt="Screenshot 2026-01-21 163826" src="https://github.com/user-attachments/assets/1fcaa5f3-9fd5-4326-8983-a250077c46f3" />
+
+<img width="1918" height="1018" alt="Screenshot 2026-01-21 163833" src="https://github.com/user-attachments/assets/bebec699-553b-4c4b-aaf6-56ff46c453e8" />
+
