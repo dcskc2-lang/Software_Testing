@@ -68,10 +68,62 @@ Dự án bao gồm 2 file kiểm thử chính nằm trong thư mục cypress/e2e
 
 
 - Kết quả kịch bản Giỏ hàng & Thanh toán:
-- 
+
 <img width="1919" height="1024" alt="Screenshot 2026-01-21 163816" src="https://github.com/user-attachments/assets/c3d0ed51-85e6-41b0-99ec-0c91c799d821" />
 
 <img width="1919" height="1019" alt="Screenshot 2026-01-21 163826" src="https://github.com/user-attachments/assets/1fcaa5f3-9fd5-4326-8983-a250077c46f3" />
 
 <img width="1918" height="1018" alt="Screenshot 2026-01-21 163833" src="https://github.com/user-attachments/assets/bebec699-553b-4c4b-aaf6-56ff46c453e8" />
 
+## Chương 4:
+
+## 1. Giới thiệu
+- **Mục tiêu**: Đánh giá hiệu năng của website Wikipedia dưới các mức tải khác nhau.
+- **Website kiểm thử**: [https://www.wikipedia.org](https://www.wikipedia.org)
+- **Công cụ sử dụng**: Apache JMeter 5.6.3
+- **Ngày thực hiện**: 24/1/2026
+
+## 2. Kịch bản kiểm thử (Test Scenarios)
+
+Kịch bản 1: Cơ bản (Basic Load)
+- **Cấu hình**: 10 users, 5 loops.
+- **Mục đích**: Kiểm tra phản hồi cơ bản của server với lượng truy cập thấp.
+- **Hành vi**: Truy cập trang chủ.
+
+Kịch bản 2: Tải nặng (Heavy Load)
+- **Cấu hình**: 50 users, Ramp-up 30s, chạy trong 2 phút.
+- **Mục đích**: Kiểm tra khả năng chịu tải của server khi lượng user tăng dần.
+- **Hành vi**: Truy cập trang chủ và trang ngẫu nhiên (Wiki Random).
+
+Kịch bản 3: Tùy chỉnh (Custom Load)
+- **Cấu hình**: 20 users, chạy trong 60s.
+- **Mục đích**: Mô phỏng hành vi người dùng đọc các bài viết cụ thể.
+- **Hành vi**: Truy cập Portal:Arts và Portal:History.
+
+## 3. Kết quả Kiểm thử
+
+Kịch bản 1 (Basic)
+
+<img width="1521" height="788" alt="image" src="https://github.com/user-attachments/assets/737a3163-243c-410c-9163-37f3d153f421" />
+
+- **Error %**: 0% (Sau khi thêm User-Agent)
+
+Kịch bản 2 (Heavy)
+
+<img width="1919" height="1026" alt="image" src="https://github.com/user-attachments/assets/f1efc5bb-379c-41fb-94cc-614a76064218" />
+
+- **Error %**: 0%
+
+Kịch bản 3 (Custom)
+
+<img width="1919" height="1029" alt="image" src="https://github.com/user-attachments/assets/81e78b79-c8fc-4a7c-9501-4d13d3c2987e" />
+
+- **Error %**: 2%
+
+4. Phân tích & Nhận xét
+- **Tỉ lệ lỗi**: Ban đầu gặp lỗi 403 Forbidden do Wikipedia chặn bot. Đã khắc phục bằng cách thêm "User-Agent" giả lập trình duyệt Chrome.
+- **Khả năng chịu tải**: Server phản hồi tốt trong bài test nhanh.
+
+5. Kết luận
+- Trang web hoạt động **Tốt** sau khi cấu hình đúng Header.
+- Kịch bản kiểm thử đã sẵn sàng để chạy tải nặng thực tế.
